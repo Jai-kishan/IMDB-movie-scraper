@@ -1,0 +1,81 @@
+{
+    "Bio": "The intrigue of the Shakespearean tragedy 'Macbeth' is transposed to the Mumbai underworld.",
+    "Cast": [
+        {
+            "IMDB_ids": "nm0451234",
+            "Name": "Irrfan Khan"
+        },
+        {
+            "IMDB_ids": "nm0007102",
+            "Name": "Tabu"
+        },
+        {
+            "IMDB_ids": "nm0438488",
+            "Name": "Pankaj Kapur"
+        },
+        {
+            "IMDB_ids": "nm0787462",
+            "Name": "Naseeruddin Shah"
+        },
+        {
+            "IMDB_ids": "nm0700875",
+            "Name": "Om Puri"
+        },
+        {
+            "IMDB_ids": "nm0592795",
+            "Name": "Piyush Mishra"
+        },
+        {
+            "IMDB_ids": "nm1280282",
+            "Name": "Masumeh Makhija"
+        },
+        {
+            "IMDB_ids": "nm1549267",
+            "Name": "Ajay Gehi"
+        },
+        {
+            "IMDB_ids": "nm1063072",
+            "Name": "Abbas Tyrewala"
+        },
+        {
+            "IMDB_ids": "nm1795232",
+            "Name": "Deepak Dobriyal"
+        },
+        {
+            "IMDB_ids": "nm0726943",
+            "Name": "Gyanchand Rikki"
+        },
+        {
+            "IMDB_ids": "nm1514852",
+            "Name": "Manav Kaushik"
+        },
+        {
+            "IMDB_ids": "nm1340178",
+            "Name": "Ankur Vikal"
+        },
+        {
+            "IMDB_ids": "nm1335622",
+            "Name": "Pubali Sanyal"
+        },
+        {
+            "IMDB_ids": "nm0707266",
+            "Name": "Raj"
+        }
+    ],
+    "Country": "India",
+    "Director": [
+        "Vishal Bhardwaj"
+    ],
+    "Genres": [
+        " Crime",
+        " Drama",
+        " Thriller"
+    ],
+    "Language": [
+        "Hindi",
+        "Urdu"
+    ],
+    "Movie Title": "Maqbool ",
+    "Poster_image_url": "https://m.media-amazon.com/images/M/MV5BMTE2NjYzOWUtMDgyZS00NGY3LTk5ZDctODMxNGYyNjUyODIwXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY268_CR5,0,182,268_AL__QL50.jpg",
+    "RunTime": "132min"
+}

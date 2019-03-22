@@ -1,0 +1,81 @@
+{
+    "Bio": "The story of six young Indians who assist an English woman to film a documentary on the extremist freedom fighters from their past, and the events that lead them to relive the long-forgotten saga of freedom.",
+    "Cast": [
+        {
+            "IMDB_ids": "nm0451148",
+            "Name": "Aamir Khan"
+        },
+        {
+            "IMDB_ids": "nm1413459",
+            "Name": "Siddharth"
+        },
+        {
+            "IMDB_ids": "nm0430817",
+            "Name": "Sharman Joshi"
+        },
+        {
+            "IMDB_ids": "nm1577858",
+            "Name": "Kunal Kapoor"
+        },
+        {
+            "IMDB_ids": "nm0474609",
+            "Name": "Atul Kulkarni"
+        },
+        {
+            "IMDB_ids": "nm1373220",
+            "Name": "Alice Patten"
+        },
+        {
+            "IMDB_ids": "nm1675786",
+            "Name": "Soha Ali Khan"
+        },
+        {
+            "IMDB_ids": "nm0533599",
+            "Name": "Steven Mackintosh"
+        },
+        {
+            "IMDB_ids": "nm0534856",
+            "Name": "Madhavan"
+        },
+        {
+            "IMDB_ids": "nm0716851",
+            "Name": "Waheeda Rehman"
+        },
+        {
+            "IMDB_ids": "nm0451600",
+            "Name": "Anupam Kher"
+        },
+        {
+            "IMDB_ids": "nm0451601",
+            "Name": "Kiron Kher"
+        },
+        {
+            "IMDB_ids": "nm0700875",
+            "Name": "Om Puri"
+        },
+        {
+            "IMDB_ids": "nm0849195",
+            "Name": "Lekh Tandon"
+        },
+        {
+            "IMDB_ids": "nm1213909",
+            "Name": "Cyrus Sahukar"
+        }
+    ],
+    "Country": "India",
+    "Director": [
+        "Rakeysh Omprakash Mehra"
+    ],
+    "Genres": [
+        " Comedy",
+        " Drama"
+    ],
+    "Language": [
+        "Hindi",
+        "Punjabi",
+        "English"
+    ],
+    "Movie Title": "Rang De Basanti ",
+    "Poster_image_url": "https://m.media-amazon.com/images/M/MV5BM2I3OGU1YmQtNjIyOC00OGYzLWFkOTgtOGIyMDVlNmE2M2VmXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY268_CR3,0,182,268_AL__QL50.jpg",
+    "RunTime": "157min"
+}

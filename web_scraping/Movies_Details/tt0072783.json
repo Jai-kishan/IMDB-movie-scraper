@@ -1,0 +1,80 @@
+{
+    "Bio": "A newly wedded husband plays a practical joke on his wife's family with full support from his wife and friends.",
+    "Cast": [
+        {
+            "IMDB_ids": "nm0004429",
+            "Name": "Dharmendra"
+        },
+        {
+            "IMDB_ids": "nm0846616",
+            "Name": "Sharmila Tagore"
+        },
+        {
+            "IMDB_ids": "nm0000821",
+            "Name": "Amitabh Bachchan"
+        },
+        {
+            "IMDB_ids": "nm0080149",
+            "Name": "Jaya Bhaduri"
+        },
+        {
+            "IMDB_ids": "nm0008932",
+            "Name": "David Abraham"
+        },
+        {
+            "IMDB_ids": "nm0456096",
+            "Name": "Usha Kiran"
+        },
+        {
+            "IMDB_ids": "nm0149846",
+            "Name": "Lily Chakravarty"
+        },
+        {
+            "IMDB_ids": "nm0611537",
+            "Name": "Keshto Mukherjee"
+        },
+        {
+            "IMDB_ids": "nm0222743",
+            "Name": "Dev Kishan"
+        },
+        {
+            "IMDB_ids": "nm0695170",
+            "Name": "Om Prakash"
+        },
+        {
+            "IMDB_ids": "nm0474931",
+            "Name": "Lalita Kumari"
+        },
+        {
+            "IMDB_ids": "nm1094960",
+            "Name": "Naina Apte"
+        },
+        {
+            "IMDB_ids": "nm1617534",
+            "Name": "Chaitali"
+        },
+        {
+            "IMDB_ids": "nm0992862",
+            "Name": "Aarti"
+        },
+        {
+            "IMDB_ids": "nm1059411",
+            "Name": "Amol Sen"
+        }
+    ],
+    "Country": "India",
+    "Director": [
+        "Hrishikesh Mukherjee"
+    ],
+    "Genres": [
+        " Comedy",
+        " Drama",
+        " Romance"
+    ],
+    "Language": [
+        "Hindi"
+    ],
+    "Movie Title": "Chupke Chupke ",
+    "Poster_image_url": "https://m.media-amazon.com/images/M/MV5BMjAzMjMzMzU2N15BMl5BanBnXkFtZTgwMDkxOTE3NDE@._V1_UY268_CR9,0,182,268_AL__QL50.jpg",
+    "RunTime": "146min"
+}

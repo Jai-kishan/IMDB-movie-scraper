@@ -1,0 +1,81 @@
+{
+    "Bio": "Neerja is the story of the courageous Neerja Bhanot, who sacrificed her life while protecting the lives of 359 passengers on the Pan Am flight 73 in 1986. The flight was hijacked by a terrorist organization.",
+    "Cast": [
+        {
+            "IMDB_ids": "nm2128238",
+            "Name": "Sonam Kapoor"
+        },
+        {
+            "IMDB_ids": "nm0000818",
+            "Name": "Shabana Azmi"
+        },
+        {
+            "IMDB_ids": "nm0863171",
+            "Name": "Yogendra Tiku"
+        },
+        {
+            "IMDB_ids": "nm5228901",
+            "Name": "Abrar Zahoor"
+        },
+        {
+            "IMDB_ids": "nm6845061",
+            "Name": "Jim Sarbh"
+        },
+        {
+            "IMDB_ids": "nm7943002",
+            "Name": "Ali Baldiwala"
+        },
+        {
+            "IMDB_ids": "nm7943138",
+            "Name": "Vikrant Singta"
+        },
+        {
+            "IMDB_ids": "nm7805689",
+            "Name": "Kirti Adarkar"
+        },
+        {
+            "IMDB_ids": "nm3124376",
+            "Name": "Parthaa Akerkar"
+        },
+        {
+            "IMDB_ids": "nm5854811",
+            "Name": "Hayder Ali"
+        },
+        {
+            "IMDB_ids": "nm8173733",
+            "Name": "Arjun Aneja"
+        },
+        {
+            "IMDB_ids": "nm9377852",
+            "Name": "Yugesh Anil"
+        },
+        {
+            "IMDB_ids": "nm7937405",
+            "Name": "Bobby Arora"
+        },
+        {
+            "IMDB_ids": "nm7939205",
+            "Name": "Rohit Assija"
+        },
+        {
+            "IMDB_ids": "nm3424525",
+            "Name": "Sabreen Baker"
+        }
+    ],
+    "Country": "India",
+    "Director": [
+        "Ram Madhvani"
+    ],
+    "Genres": [
+        " Biography",
+        " Drama",
+        " Thriller"
+    ],
+    "Language": [
+        "Hindi",
+        "English"
+    ],
+    "Movie Title": "Neerja ",
+    "Poster_image_url": "https://m.media-amazon.com/images/M/MV5BZDhjM2E0OWMtOTA0Yy00NTNhLWEwNTEtZjhkNjNmNTdiZDA2XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY268_CR1,0,182,268_AL__QL50.jpg",
+    "RunTime": "122min"
+}

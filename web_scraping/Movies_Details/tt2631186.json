@@ -1,0 +1,81 @@
+{
+    "Bio": "In ancient India, an adventurous and daring man becomes involved in a decades old feud between two warring people.",
+    "Cast": [
+        {
+            "IMDB_ids": "nm1659141",
+            "Name": "Prabhas"
+        },
+        {
+            "IMDB_ids": "nm2281292",
+            "Name": "Rana Daggubati"
+        },
+        {
+            "IMDB_ids": "nm0471447",
+            "Name": "Ramya Krishnan"
+        },
+        {
+            "IMDB_ids": "nm0766470",
+            "Name": "Sathyaraj"
+        },
+        {
+            "IMDB_ids": "nm2011932",
+            "Name": "Anushka Shetty"
+        },
+        {
+            "IMDB_ids": "nm1961459",
+            "Name": "Tamannaah Bhatia"
+        },
+        {
+            "IMDB_ids": "nm0621937",
+            "Name": "Nassar"
+        },
+        {
+            "IMDB_ids": "nm1679372",
+            "Name": "Sudeep"
+        },
+        {
+            "IMDB_ids": "nm7319988",
+            "Name": "Prabhakar"
+        },
+        {
+            "IMDB_ids": "nm6845066",
+            "Name": "Rajsekhar Aningi"
+        },
+        {
+            "IMDB_ids": "nm4992192",
+            "Name": "Gabriela Bertante"
+        },
+        {
+            "IMDB_ids": "nm9860260",
+            "Name": "Bhanu Sri"
+        },
+        {
+            "IMDB_ids": "nm0080238",
+            "Name": "Tanikella Bharani"
+        },
+        {
+            "IMDB_ids": "nm6598222",
+            "Name": "Nora Fatehi"
+        },
+        {
+            "IMDB_ids": "nm9842626",
+            "Name": "Sri Simha Koduri"
+        }
+    ],
+    "Country": "India",
+    "Director": [
+        "S.S. Rajamouli"
+    ],
+    "Genres": [
+        " Action",
+        " Drama"
+    ],
+    "Language": [
+        "Telugu",
+        "Tamil",
+        "Hindi"
+    ],
+    "Movie Title": "Bahubali: The Beginning ",
+    "Poster_image_url": "https://m.media-amazon.com/images/M/MV5BYWVlMjVhZWYtNWViNC00ODFkLTk1MmItYjU1MDY5ZDdhMTU3XkEyXkFqcGdeQXVyODIwMDI1NjM@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+    "RunTime": "159min"
+}

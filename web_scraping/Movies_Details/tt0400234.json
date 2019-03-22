@@ -1,0 +1,81 @@
+{
+    "Bio": "Black Friday is a film about the investigations following the 1993 serial Bombay bomb blasts, told through the different stories of the people involved --police, conspirators, victims, middlemen.",
+    "Cast": [
+        {
+            "IMDB_ids": "nm1946407",
+            "Name": "Kay Kay Menon"
+        },
+        {
+            "IMDB_ids": "nm0539497",
+            "Name": "Pavan Malhotra"
+        },
+        {
+            "IMDB_ids": "nm0820282",
+            "Name": "Aditya Srivastava"
+        },
+        {
+            "IMDB_ids": "nm0080349",
+            "Name": "Dibyendu Bhattacharya"
+        },
+        {
+            "IMDB_ids": "nm0434263",
+            "Name": "Kishore Kadam"
+        },
+        {
+            "IMDB_ids": "nm0710549",
+            "Name": "Gajraj Rao"
+        },
+        {
+            "IMDB_ids": "nm0403984",
+            "Name": "Zakir Hussain"
+        },
+        {
+            "IMDB_ids": "nm1326262",
+            "Name": "Somesh Agarwal"
+        },
+        {
+            "IMDB_ids": "nm6271541",
+            "Name": "Akhilesh Tripathi"
+        },
+        {
+            "IMDB_ids": "nm1665004",
+            "Name": "Imtiaz Ali"
+        },
+        {
+            "IMDB_ids": "nm2366974",
+            "Name": "Raj Arjun"
+        },
+        {
+            "IMDB_ids": "nm1616361",
+            "Name": "Ragesh Asthana"
+        },
+        {
+            "IMDB_ids": "nm1309355",
+            "Name": "Sushovan Banerjee"
+        },
+        {
+            "IMDB_ids": "nm1794460",
+            "Name": "Asif Basra"
+        },
+        {
+            "IMDB_ids": "nm1023986",
+            "Name": "Aditya Bhattacharya"
+        }
+    ],
+    "Country": "India",
+    "Director": [
+        "Anurag Kashyap"
+    ],
+    "Genres": [
+        " Action",
+        " Crime",
+        " Drama",
+        " History"
+    ],
+    "Language": [
+        "Hindi"
+    ],
+    "Movie Title": "Black Friday ",
+    "Poster_image_url": "https://m.media-amazon.com/images/M/MV5BZjA2NjJmOGMtMGMxMS00OGNhLWE2OTEtM2NjYWE5ZGI1MjYyXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY268_CR1,0,182,268_AL__QL50.jpg",
+    "RunTime": "143min"
+}

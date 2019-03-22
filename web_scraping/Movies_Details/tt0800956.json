@@ -1,0 +1,81 @@
+{
+    "Bio": "Six different stories, about nine people, each with different issues and problems, all occurring within one place: the METRO.",
+    "Cast": [
+        {
+            "IMDB_ids": "nm0004429",
+            "Name": "Dharmendra"
+        },
+        {
+            "IMDB_ids": "nm0451234",
+            "Name": "Irrfan Khan"
+        },
+        {
+            "IMDB_ids": "nm1234298",
+            "Name": "Konkona Sen Sharma"
+        },
+        {
+            "IMDB_ids": "nm1946407",
+            "Name": "Kay Kay Menon"
+        },
+        {
+            "IMDB_ids": "nm0792908",
+            "Name": "Shilpa Shetty Kundra"
+        },
+        {
+            "IMDB_ids": "nm1832004",
+            "Name": "Shiney Ahuja"
+        },
+        {
+            "IMDB_ids": "nm0430817",
+            "Name": "Sharman Joshi"
+        },
+        {
+            "IMDB_ids": "nm2144007",
+            "Name": "Kangana Ranaut"
+        },
+        {
+            "IMDB_ids": "nm0019465",
+            "Name": "Nafisa Ali"
+        },
+        {
+            "IMDB_ids": "nm1206317",
+            "Name": "Vicky Ahuja"
+        },
+        {
+            "IMDB_ids": "nm1330687",
+            "Name": "Gautam Kapoor"
+        },
+        {
+            "IMDB_ids": "nm5290022",
+            "Name": "Ayaan Khan"
+        },
+        {
+            "IMDB_ids": "nm2511745",
+            "Name": "Ashwin Mushran"
+        },
+        {
+            "IMDB_ids": "nm0632079",
+            "Name": "Nilofar"
+        },
+        {
+            "IMDB_ids": "nm2388090",
+            "Name": "Rinku Patel"
+        }
+    ],
+    "Country": "India",
+    "Director": [
+        "Anurag Basu",
+        "Sunil Subramani"
+    ],
+    "Genres": [
+        " Comedy",
+        " Drama",
+        " Romance"
+    ],
+    "Language": [
+        "Hindi"
+    ],
+    "Movie Title": "Life in a Metro ",
+    "Poster_image_url": "https://m.media-amazon.com/images/M/MV5BNmVmMTEwMzQtMDNkNC00M2U5LWE5M2EtODM0NTM5NGU2OTQ2XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY268_CR2,0,182,268_AL__QL50.jpg",
+    "RunTime": "132min"
+}

@@ -1,0 +1,79 @@
+{
+    "Bio": "A coming-of-age story based on the lives of street rappers in Mumbai.",
+    "Cast": [
+        {
+            "IMDB_ids": "nm3828984",
+            "Name": "Ranveer Singh"
+        },
+        {
+            "IMDB_ids": "nm1017633",
+            "Name": "Alia Bhatt"
+        },
+        {
+            "IMDB_ids": "nm8237564",
+            "Name": "Siddhant Chaturvedi"
+        },
+        {
+            "IMDB_ids": "nm0704694",
+            "Name": "Vijay Raaz"
+        },
+        {
+            "IMDB_ids": "nm1576284",
+            "Name": "Amruta Subhash"
+        },
+        {
+            "IMDB_ids": "nm1994146",
+            "Name": "Vijay Varma"
+        },
+        {
+            "IMDB_ids": "nm3202701",
+            "Name": "Kalki Koechlin"
+        },
+        {
+            "IMDB_ids": "nm1038430",
+            "Name": "Ikhlaque Khan"
+        },
+        {
+            "IMDB_ids": "nm0149441",
+            "Name": "Sheeba Chaddha"
+        },
+        {
+            "IMDB_ids": "nm1533122",
+            "Name": "Jyoti Subhash"
+        },
+        {
+            "IMDB_ids": "nm1038431",
+            "Name": "Rahul Piske"
+        },
+        {
+            "IMDB_ids": "nm4393513",
+            "Name": "Nakul Sachdeva"
+        },
+        {
+            "IMDB_ids": "nm3175339",
+            "Name": "Shruti Chauhan"
+        },
+        {
+            "IMDB_ids": "nm7929139",
+            "Name": "Aishwarya Desai"
+        },
+        {
+            "IMDB_ids": "nm3591303",
+            "Name": "Kubbra Sait"
+        }
+    ],
+    "Country": "India",
+    "Director": [
+        "Zoya Akhtar"
+    ],
+    "Genres": [
+        " Drama",
+        " Music"
+    ],
+    "Language": [
+        "Hindi"
+    ],
+    "Movie Title": "Gully Boy ",
+    "Poster_image_url": "https://m.media-amazon.com/images/M/MV5BZDkzMTQ1YTMtMWY4Ny00MzExLTkzYzEtNzZhOTczNzU2NTU1XkEyXkFqcGdeQXVyODY3NjMyMDU@._V1_UY268_CR11,0,182,268_AL__QL50.jpg",
+    "RunTime": "153min"
+}

@@ -1,0 +1,82 @@
+{
+    "Bio": "Three friends decide to turn their fantasy vacation into reality after one of their number becomes engaged.",
+    "Cast": [
+        {
+            "IMDB_ids": "nm0004335",
+            "Name": "Hrithik Roshan"
+        },
+        {
+            "IMDB_ids": "nm1027719",
+            "Name": "Farhan Akhtar"
+        },
+        {
+            "IMDB_ids": "nm1867717",
+            "Name": "Abhay Deol"
+        },
+        {
+            "IMDB_ids": "nm1229940",
+            "Name": "Katrina Kaif"
+        },
+        {
+            "IMDB_ids": "nm3202701",
+            "Name": "Kalki Koechlin"
+        },
+        {
+            "IMDB_ids": "nm1779186",
+            "Name": "Ariadna Cabrol"
+        },
+        {
+            "IMDB_ids": "nm0787462",
+            "Name": "Naseeruddin Shah"
+        },
+        {
+            "IMDB_ids": "nm0622732",
+            "Name": "Deepti Naval"
+        },
+        {
+            "IMDB_ids": "nm5209363",
+            "Name": "Surpreet Bedi"
+        },
+        {
+            "IMDB_ids": "nm3442808",
+            "Name": "Anisa Butt"
+        },
+        {
+            "IMDB_ids": "nm5208483",
+            "Name": "Juan Jose Amador"
+        },
+        {
+            "IMDB_ids": "nm3769223",
+            "Name": "Aashrita Kamath"
+        },
+        {
+            "IMDB_ids": "nm1299892",
+            "Name": "Lolo Herrero"
+        },
+        {
+            "IMDB_ids": "nm5207756",
+            "Name": "Barbara Holzer"
+        },
+        {
+            "IMDB_ids": "nm3785394",
+            "Name": "Ravi Khemu"
+        }
+    ],
+    "Country": "India",
+    "Director": [
+        "Zoya Akhtar"
+    ],
+    "Genres": [
+        " Comedy",
+        " Drama"
+    ],
+    "Language": [
+        "Hindi",
+        "Japanese",
+        "Spanish",
+        "English"
+    ],
+    "Movie Title": "Zindagi Na Milegi Dobara ",
+    "Poster_image_url": "https://m.media-amazon.com/images/M/MV5BZGFmMjM5OWMtZTRiNC00ODhlLThlYTItYTcyZDMyYmMyYjFjXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UY268_CR2,0,182,268_AL__QL50.jpg",
+    "RunTime": "155min"
+}

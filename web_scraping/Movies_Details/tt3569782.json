@@ -1,0 +1,81 @@
+{
+    "Bio": "An aspiring director targets a ruthless gangster because he wants to make a violent gangster film. His discreet attempts to research the gangster fail miserably. Finally when he gets caught snooping, things hit the fan.",
+    "Cast": [
+        {
+            "IMDB_ids": "nm1413459",
+            "Name": "Siddharth"
+        },
+        {
+            "IMDB_ids": "nm5654277",
+            "Name": "Bobby Simha"
+        },
+        {
+            "IMDB_ids": "nm5068044",
+            "Name": "Lakshmi Menon"
+        },
+        {
+            "IMDB_ids": "nm0621937",
+            "Name": "Nassar"
+        },
+        {
+            "IMDB_ids": "nm4861046",
+            "Name": "Aadukalam Naren"
+        },
+        {
+            "IMDB_ids": "nm5626435",
+            "Name": "Guru Somasundaram"
+        },
+        {
+            "IMDB_ids": "nm5369429",
+            "Name": "Karunakaran"
+        },
+        {
+            "IMDB_ids": "nm3905156",
+            "Name": "Sangili Murugan"
+        },
+        {
+            "IMDB_ids": "nm0304265",
+            "Name": "Delhi Ganesh"
+        },
+        {
+            "IMDB_ids": "nm0024302",
+            "Name": "Ambika"
+        },
+        {
+            "IMDB_ids": "nm6678944",
+            "Name": "Sudha"
+        },
+        {
+            "IMDB_ids": "nm5408984",
+            "Name": "Bagavathi Perumal"
+        },
+        {
+            "IMDB_ids": "nm5408510",
+            "Name": "Rajkumar"
+        },
+        {
+            "IMDB_ids": "nm6678966",
+            "Name": "Vinodhini Vaidynathan"
+        },
+        {
+            "IMDB_ids": "nm6670078",
+            "Name": "Ramachandran"
+        }
+    ],
+    "Country": "India",
+    "Director": [
+        "Karthik Subbaraj"
+    ],
+    "Genres": [
+        " Action",
+        " Crime",
+        " Drama",
+        " Thriller"
+    ],
+    "Language": [
+        "Tamil"
+    ],
+    "Movie Title": "Jigarthanda ",
+    "Poster_image_url": "https://m.media-amazon.com/images/M/MV5BOTY0MzA3NmQtMDQ2YS00MmIyLTkzNWItMjkyMmYyMmZkNDI0XkEyXkFqcGdeQXVyODIwMDI1NjM@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+    "RunTime": "171min"
+}

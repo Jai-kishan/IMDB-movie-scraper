@@ -1,0 +1,81 @@
+{
+    "Bio": "A story that revolves around drug abuse in the affluent north Indian State of Punjab and how the youth there have succumbed to it en-masse resulting in a socio-economic decline.",
+    "Cast": [
+        {
+            "IMDB_ids": "nm1372788",
+            "Name": "Shahid Kapoor"
+        },
+        {
+            "IMDB_ids": "nm1017633",
+            "Name": "Alia Bhatt"
+        },
+        {
+            "IMDB_ids": "nm0004626",
+            "Name": "Kareena Kapoor"
+        },
+        {
+            "IMDB_ids": "nm4362492",
+            "Name": "Diljit Dosanjh"
+        },
+        {
+            "IMDB_ids": "nm0442479",
+            "Name": "Satish Kaushik"
+        },
+        {
+            "IMDB_ids": "nm2435847",
+            "Name": "Manav Vij"
+        },
+        {
+            "IMDB_ids": "nm3119274",
+            "Name": "Vansh Bhardwaj"
+        },
+        {
+            "IMDB_ids": "nm8237562",
+            "Name": "Suhail Nayyar"
+        },
+        {
+            "IMDB_ids": "nm8253714",
+            "Name": "Prabhjyot Singh"
+        },
+        {
+            "IMDB_ids": "nm6422090",
+            "Name": "Rajesh Kumar Sharma"
+        },
+        {
+            "IMDB_ids": "nm1033153",
+            "Name": "Kamal Tiwari"
+        },
+        {
+            "IMDB_ids": "nm1206435",
+            "Name": "Mahabir Bhullar"
+        },
+        {
+            "IMDB_ids": "nm4167503",
+            "Name": "Suvinder Vicky"
+        },
+        {
+            "IMDB_ids": "nm5669149",
+            "Name": "Dilawar Sidhu"
+        },
+        {
+            "IMDB_ids": "nm8998462",
+            "Name": "Lovely Sidhu"
+        }
+    ],
+    "Country": "India",
+    "Director": [
+        "Abhishek Chaubey"
+    ],
+    "Genres": [
+        " Action",
+        " Crime",
+        " Drama"
+    ],
+    "Language": [
+        "Hindi",
+        "Punjabi"
+    ],
+    "Movie Title": "Udta Punjab ",
+    "Poster_image_url": "https://m.media-amazon.com/images/M/MV5BNGQ4MTk2NjQtYmYzMy00MWZkLWE1YTktYWVmNWU2NjNmMzlkXkEyXkFqcGdeQXVyNTE2MzU4OTA@._V1_UY268_CR2,0,182,268_AL__QL50.jpg",
+    "RunTime": "148min"
+}

@@ -1,0 +1,83 @@
+{
+    "Bio": "A Delhi girl from a traditional family sets out on a solo honeymoon after her marriage gets cancelled.",
+    "Cast": [
+        {
+            "IMDB_ids": "nm2144007",
+            "Name": "Kangana Ranaut"
+        },
+        {
+            "IMDB_ids": "nm3822770",
+            "Name": "Rajkummar Rao"
+        },
+        {
+            "IMDB_ids": "nm3629863",
+            "Name": "Lisa Haydon"
+        },
+        {
+            "IMDB_ids": "nm7832790",
+            "Name": "Jeffrey Ho"
+        },
+        {
+            "IMDB_ids": "nm5062737",
+            "Name": "Marco Canadea"
+        },
+        {
+            "IMDB_ids": "nm6141087",
+            "Name": "Guithob Joseph"
+        },
+        {
+            "IMDB_ids": "nm0863171",
+            "Name": "Yogendra Tiku"
+        },
+        {
+            "IMDB_ids": "nm7478179",
+            "Name": "Alka Badola Kaushal"
+        },
+        {
+            "IMDB_ids": "nm7303322",
+            "Name": "Tripta Lakhanpal"
+        },
+        {
+            "IMDB_ids": "nm4496851",
+            "Name": "Chinmay Chandraunshuh"
+        },
+        {
+            "IMDB_ids": "nm4540508",
+            "Name": "Nayani Dixit"
+        },
+        {
+            "IMDB_ids": "nm3356469",
+            "Name": "Sabeeka Imam"
+        },
+        {
+            "IMDB_ids": "nm7640228",
+            "Name": "Ayaan Malik"
+        },
+        {
+            "IMDB_ids": "nm7640229",
+            "Name": "Ramesh Kalra"
+        },
+        {
+            "IMDB_ids": "nm5676789",
+            "Name": "Poonam Mathur"
+        }
+    ],
+    "Country": "India",
+    "Director": [
+        "Vikas Bahl"
+    ],
+    "Genres": [
+        " Comedy",
+        " Drama"
+    ],
+    "Language": [
+        "Hindi",
+        "English",
+        "French",
+        "Japanese",
+        "Dutch"
+    ],
+    "Movie Title": "Queen ",
+    "Poster_image_url": "https://m.media-amazon.com/images/M/MV5BNWYyOWRlOWItZWM5MS00ZjJkLWI0MTUtYTE3NTI5MDAwYjgyXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY268_CR2,0,182,268_AL__QL50.jpg",
+    "RunTime": "146min"
+}
