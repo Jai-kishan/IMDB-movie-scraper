@@ -1,9 +1,10 @@
-from urllib.request import urlopen
-from bs4 import BeautifulSoup
-from pprint import pprint
+from urllib.request import urlopen # Importing requests to get request data from a Web URL
+from bs4 import BeautifulSoup # Importing BeautifulSoup from BS4, BeautifulSoup is a scraping tool
+from pprint import pprint # Importing pprint for pretty print
 import os.path
-import json
-import random, time
+import json ## Importing JSON module to load and dump from json file and dump dictionary in json respectively
+#randint is a function that is part of the random module.
+import random, time #Importing time library to 'sleep' our program between two requests
 
 #task_1
 def scrape_top_list():
@@ -12,9 +13,6 @@ def scrape_top_list():
 			read_file=file.read()
 			file_store=json.loads(read_file)
 		return file_store
-
-	# rand=random.randint(1,3)
-	# time.sleep(rand)
 
 	imdb_url=urlopen("https://www.imdb.com/india/top-rated-indian-movies/")
 	soup=BeautifulSoup(imdb_url, "lxml")
@@ -64,60 +62,9 @@ def scrape_top_list():
 
 
 movies=scrape_top_list()
-# pprint(movies)
-
-
-#Task 2
-def group_by_year(movies):
-	lst_of_year=[]
-	yearly_movies={}
-	for i in movies:
-		if i["Movie Year"] not in lst_of_year:
-			lst_of_year.append(i["Movie Year"])
-
-	#this mehthos use for sort the list element reverse
-	lst_of_year.sort(reverse=True)
-	print(lst_of_year)
-	for j in lst_of_year:
-		same_year=[]
-		for k in movies:
-			if j==k["Movie Year"]:
-				same_year.append(k)
-		yearly_movies[j]=same_year
-	return yearly_movies
-# pprint(group_by_year(movies))
-
-
-#Task 3
-def group_by_decade(movies):
-	start_year=1950
-	lst_of_year=[]
-	decade_year=[]
-	movie_list_by_decade = []
-
-	for i in movies:
-		lst_of_year.append(i["Movie Year"])
-		lst_of_year.sort()
-
-	for i in range(start_year,lst_of_year[-1],10):
-		decade_year.append(i)
-
-	decade_year.sort(reverse=True)
-
-	for i in decade_year:
-		movie_store_in_dict={}
-		movie_store_in_dict[i] = []
-		for j in movies:
-			if j["Movie Year"] >= i and j["Movie Year"] <= i+9:
-				movie_store_in_dict[i].append(j)
-		movie_list_by_decade.append(movie_store_in_dict)
-	
-	return (movie_list_by_decade)
-# pprint(group_by_decade(movies))
-
 
 #Task_12
-
+new_movie_url="http://saral.navgurukul.org/course?id=76&slug=web-scraping__task12"
 def scrape_movie_cast(movie_caste_url):
 
 	movie_cast=[]
@@ -138,24 +85,28 @@ def scrape_movie_cast(movie_caste_url):
 
 	return movie_cast
 
-# pprint(scrape_movie_cast(movie_caste_url))
 
-
-
-#Task 4
+#Task 4 and Task 8 and Task 9.
+# This movie returns major details of a movies from the file if it exists,
+# otherwise it scrapes and write the data into a file and then returns the data
 def scrape_movie_details(movie_url):
-	# task_13
-	cast= scrape_movie_cast(movie_url)
+	
+	import time
+	sleep=random.randint(1,3) #Generate a random number between 1 and 3, both inclusive
+	time.sleep(sleep) #Sleeping the program for the randomly generated seconds
+
 
 	movies_id=movie_url[27:-1]
 	movies_path=(f"Movies_Details/{movies_id}.json")
-	if os.path.exists(movies_path):
+	if os.path.exists(movies_path):  #Checks whether JSON file already exists or not
 		with open(movies_path,"r") as file:
 			read_file = file.read()
 			file_store=json.loads(read_file)
 		return (file_store)
 
-	store={
+	cast= scrape_movie_cast(movie_url) #Calling 12th function to get full cast of this movie
+
+	store={		 #Creating dictionary and assigning values to its respective keys
 	"Movie Title": "",
 	"Director": [],
 	"Country": "",
@@ -163,8 +114,8 @@ def scrape_movie_details(movie_url):
 	"Poster_image_url": "",
 	"Bio": "",
 	"RunTime":"",
-	"Genres":[],
-	"Cast":cast
+	"Genres": [],
+	"Cast" : cast
 	}
 
 
@@ -193,7 +144,7 @@ def scrape_movie_details(movie_url):
 	mai_director=soup.find(class_="credit_summary_item")
 	director=mai_director.find_all("a")
 	for i in director:
-		store["Director"].append(i.get_text())
+		store["Director"].append(i.get_text())  #Appending directors name in list
 
 	#Movie Genres
 	all_genre=soup.find("div", id="titleStoryLine")
@@ -203,25 +154,25 @@ def scrape_movie_details(movie_url):
 		if data == "Genres:":
 			Genres=i.find_all("a")
 			for i in Genres:
-				store["Genres"].append(i.get_text())
+				store["Genres"].append(i.get_text())  #Appending all genres in list
 
 	#Which country made by this movie also which languages in this movie
 	find_country=soup.find("div", id="titleDetails")
 	find_all_class=find_country.find_all("div",class_="txt-block")
 	count=0
 	for i in find_all_class:
-		h4_tag=i.find("h4",class_="inline")
+		h4_tag=i.find("h4",class_="inline") #Finding all 'h4' tag whose class is "inline" in 'div' whose class is "txt-block"
 		if count==2:
 			break
-		if h4_tag.get_text() == "Country:":
+		if h4_tag.get_text() == "Country:":   #Finding country
 			country=i.find("a").get_text()
 			store["Country"]=country
 			count=count+1
 		#How many languages in this Movies
 		if h4_tag.get_text()=="Language:":
-			language=i.find_all("a")
+			language=i.find_all("a")   #Finding all 'a' tags to get all languages
 			for i in language:
-				store["Language"].append(i.get_text())
+				store["Language"].append(i.get_text()) #Appending languages in a list
 			count+=1
 
 	sub_div=soup.find("div",class_="subtext")
@@ -239,132 +190,47 @@ def scrape_movie_details(movie_url):
 	
 	store["RunTime"]=runtime
 
-	file= open(movies_path,"w+")
-	raw=json.dumps(store,indent=4, sort_keys=True)
-	file.write(raw)
-	file.close()
+	with open(movies_path,"w") as file:
+		json.dump(store,file,indent=4)
 	return store
 
 #task 5 
 
 def get_movie_list_details(movies_list):
-
 	url_lst=[]
 	top_movies=[]
-	for i in movies_list[:2]:
+	for i in movies_list[:10]:
 		url_lst.append(i["URL"])
 	
 	for url in url_lst:
 		top_movies.append(scrape_movie_details(url))
-	
 	return top_movies
 
 movies_list=(get_movie_list_details(movies))
-# pprint(movies_list)
 
-#task 6
-def analyse_movies_language(movies_list):
-	lang=[]
-	unique_lang=[]
-	store={}
+#task_14
+#This function returns a dictionary with list of frequent_co actors with which lead actor of every movie has woked with
+def analyse_co_actors(movies):
+	moviesW = movies_list[0:250]
+	dicById = {}
+	for i in moviesW:   #Iterating loop over all movies
+	    cast = i['Cast']
+	    dicById[cast[0]['IMDB_ids']] = {'name' : cast[0]['Name'],'frequent_co_actors' : []} #Creating a dictionary key for the lead actor
 
-	for i in movies_list:
-		for j in i["Language"]:
-			lang.append(j)	
+	for j in dicById:       #Iterating loop over the newly created dictionary
+	    for k in movies:    #Iterating loop over all movies
+	        for l in k:
+	            if(l == 'Cast'):
+	                index = 0
+	                main = k[l][0]['IMDB_ids']
+	                if(main == j):      #Checking if lead actor key matches
+	                    for cast in k[l][1:6]:    #Iterating loop over next five actors
+	                        count = 1
+	                        for idmatch in dicById[j]['frequent_co_actors']:
+	                            if(idmatch['id']==cast['IMDB_ids']):
+	                                count+=idmatch['num_movies']    #Incrementing the count of the movies if actor already exist in the dictionary
+	                        n = {'id' : cast['IMDB_ids'], 'name' : cast['Name'], 'num_movies' : count}      #Creating a new dictionary for every new co-actor
+	                        dicById[j]['frequent_co_actors'].append(n)     #Appending the dictionary in frequent_co_actors list of the main dictionary
+	return dicById
 
-	for i in lang:
-		if i not in unique_lang:
-			unique_lang.append(i)
-
-	for i in unique_lang:
-		count=0
-		for j in lang:
-			if i==j:
-				count+=1
-		store[i]=count
-
-	return store
-	
-
-# (analyse_movies_language(movies_list))
-
-#Task 7
-def analyse_movies_directors(movies_list):
-	director=[]
-	unique_director=[]
-	store={}	
-
-	for i in movies_list:
-		for j in i["Director"]:
-			director.append(j)
-
-	for i in director:
-		if i not in unique_director:
-			unique_director.append(i)
-
-	for i in unique_director:
-		count=0
-		for j in director:
-			if i == j :
-				count+=1
-		store[i]=count
-
-	return store
-
-# (analyse_movies_directors(movies_list))
-
-def analyse_language_and_directors(movies_list):
-	list_of_directors={}
-	for i in movies_list:
-		for director in i["Director"]:
-			list_of_directors[director]={}
-
-
-	for i in range(len(movies_list)):
-		for director in list_of_directors:
-			if director in movies_list[i]["Director"]:
-				for lang in movies_list[i]["Language"]:
-					list_of_directors[director][lang]=0
-
-	for i in range(len(movies_list)):
-		for director in list_of_directors:
-			if director in movies_list[i]["Director"]:
-				for lang in movies_list[i]["Language"]:
-					list_of_directors[director][lang]+=1
-
-	return list_of_directors
-
-# (analyse_language_and_directors(movies_list))
-
-
-# Task_11
-def analyse_movies_genre(movies_list):
-	genres={}
-	for i in movies_list:
-		for gen in i["Genres"]:
-			genres[gen]=0
-
-	for i in movies_list:
-		for gen in genres:
-			if gen in i["Genres"]:
-				genres[gen]+=1
-	return(genres)
-
-# print(analyse_movies_genre(movies_list))
-
-#task14
-
-def analyse_co_actors(movies_list):
-	# store={}
-	for i in movies_list:
-		for j in i["Cast"]:
-			a=(j["IMDB_ids"])
-			b=j["Name"]
-			store={a:{"Name":b,"frequent_co_actors":[{"IMDB_ids":"","Name":"","Num_movies":""}]}}
-
-
-			store[a]["frequent_co_actors"][0]["IMDB_ids"]=1
-
-
-			pprint(store)
-analyse_co_actors(movies_list)
+pprint(analyse_co_actors(movies_list))
