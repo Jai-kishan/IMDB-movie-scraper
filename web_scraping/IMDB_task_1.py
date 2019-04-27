@@ -11,6 +11,8 @@ import os.path ##The OS module in python provides functions for interacting with
 #normally the JSON functions are used to read and write directly from JSON files
 import json
 
+# Task 1
+# This function returns list of Top 250 movies according to IMDB with minor details
 def scrape_top_list():
 	if os.path.exists("Top_250_movies.json"):
 		with open("Top_250_movies.json") as file:
@@ -20,31 +22,31 @@ def scrape_top_list():
 			file_store=json.loads(read_file)
 		return file_store
 
-	imdb_url=urlopen("https://www.imdb.com/india/top-rated-indian-movies/")
-	soup=BeautifulSoup(imdb_url, "lxml")
-	main_div=soup.find("tbody", class_="lister-list")
-	table_row=main_div.find_all("tr")
+	imdb_url=urlopen("https://www.imdb.com/india/top-rated-indian-movies/") # Scraping data of this URL
+	soup=BeautifulSoup(imdb_url, "lxml") # Parsing data that we get from requests
+	main_div=soup.find("tbody", class_="lister-list")  # Finding the first 'tbody' tag whose class is "lister-list"
+	table_row=main_div.find_all("tr") # Finding all 'tr' tags
 
 	movie_detail=[]
 	for tr in table_row:
 
 		#movie position 
-		position=tr.find("td",class_="titleColumn").get_text().strip().split()
+		position=tr.find("td",class_="titleColumn").get_text().strip().split() # Getting Rank from 'td' tag
 		position=int(position[0].strip("."))
 
 		#Movie Name
-		movie_name=tr.find("td",class_="titleColumn").a.get_text()
+		movie_name=tr.find("td",class_="titleColumn").a.get_text()  # Getting Name from 'td' tag
 
 		#Movie Year
-		movie_year=tr.find("td",class_="titleColumn").span.get_text()
+		movie_year=tr.find("td",class_="titleColumn").span.get_text() # Getting Year from 'td' tag
 		movie_year=movie_year.replace("(","").replace(")","")
 
 		#Movie Rating
-		rating=tr.find("td",class_="imdbRating").strong.get_text()
+		rating=tr.find("td",class_="imdbRating").strong.get_text()  # Geting Rating from 'td' tag
 
 		#Movie URL
 		url="https://www.imdb.com"
-		make_url=tr.find("td",class_="titleColumn").a["href"]
+		make_url=tr.find("td",class_="titleColumn").a["href"] # Getting URL of the movie
 		for i in make_url:
 			if "?" in i:
 				break
