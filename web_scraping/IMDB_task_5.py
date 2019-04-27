@@ -159,15 +159,17 @@ def scrape_movie_details(movie_url):
 
 #task 5 
 #pichle task-4 me humne bas ek movie ki Details nikali thi ab hume top 250 movies ke details nikali hai 
+
+#This function returns a list with many major details of many movies
 def get_movie_list_details(movies_list):
 
 	url_lst=[]
 	top_movies=[]
 	for i in movies_list:
-		url_lst.append(i["URL"])
+		url_lst.append(i["URL"]) #Calling 4th function for 250 movies
 	
 	for url in url_lst:
-		top_movies.append(scrape_movie_details(url))
+		top_movies.append(scrape_movie_details(url))   #Appending the returned data into a list
 	
 	return top_movies
 
