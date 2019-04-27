@@ -1,44 +1,71 @@
-from bs4 import BeautifulSoup	
 from urllib.request import urlopen
+# Beautiful Soup is a Python library for pulling data out of HTML and XML files.
+from bs4 import BeautifulSoup
+#pprint — Data pretty printer. 
+#The pprint module provides a capability to “pretty-print” arbitrary Python data structures in a form which can be used as input to the interpreter.
 from pprint import pprint
+import os.path ##The OS module in python provides functions for interacting with the operating system.
 
-url=urlopen("https://www.imdb.com/india/top-rated-indian-movies/")
-# response=requests.get(url)
+#The JSON module is mainly used to convert the python dictionary above into a JSON string that can be written into a file.
+#While the JSON module will convert strings to Python datatypes,
+#normally the JSON functions are used to read and write directly from JSON files
+import json
 
-soup=BeautifulSoup(url,"lxml")
-# print(soup.prettify())
+def scrape_top_list():
+	if os.path.exists("Top_250_movies.json"):
+		with open("Top_250_movies.json") as file:
+			#Python has a built-in function open() to open a file.
+			#This function returns a file object, also called a handle, as it is used to read or modify the file accordingly.
+			read_file=file.read()
+			file_store=json.loads(read_file)
+		return file_store
 
+	imdb_url=urlopen("https://www.imdb.com/india/top-rated-indian-movies/")
+	soup=BeautifulSoup(imdb_url, "lxml")
+	main_div=soup.find("tbody", class_="lister-list")
+	table_row=main_div.find_all("tr")
 
+	movie_detail=[]
+	for tr in table_row:
 
-data_container=soup.find('div', class_='lister')
-table_body=data_container.find('tbody', class_='lister-list')
-table_row=table_body.find_all('tr')
+		#movie position 
+		position=tr.find("td",class_="titleColumn").get_text().strip().split()
+		position=int(position[0].strip("."))
 
-i=1
-for tr in table_row:
-	name=tr.find('td',class_='titleColumn').a.get_text()
+		#Movie Name
+		movie_name=tr.find("td",class_="titleColumn").a.get_text()
 
-	movie_detail=tr.find('td',class_='titleColumn').a.get('href')
-	movie_url="https://www.imdb.com"
-	for k in range(len(movie_detail)):
-		if movie_detail[k]=="?":
-			break
-		else:
-			movie_url+=movie_detail[k]
+		#Movie Year
+		movie_year=tr.find("td",class_="titleColumn").span.get_text()
+		movie_year=movie_year.replace("(","").replace(")","")
 
-	year=tr.find('td',class_='titleColumn').span.get_text()
-	year=year.replace("(","").replace(")","")
-	# print(year)
+		#Movie Rating
+		rating=tr.find("td",class_="imdbRating").strong.get_text()
 
-	rating=tr.find('td',class_='imdbRating').strong.get_text()
-	rating_new=float(rating)
-
-	store={
-		'Movie Name':name,
-		"Year":int(year),
-		"Position":i,
-		"Rationg":rating_new,
-		"url":movie_url
+		#Movie URL
+		url="https://www.imdb.com"
+		make_url=tr.find("td",class_="titleColumn").a["href"]
+		for i in make_url:
+			if "?" in i:
+				break
+			else:
+				url+=i
+		
+		store={
+		"position":position,
+		"Movie Name":movie_name,
+		"Movie Year":int(movie_year),
+		"Rating":float(rating),
+		"URL":url
 		}
-	i+=1
-	return(store)
+		
+		movie_detail.append(store)
+
+	# return(movie_detail)
+	with open("Top_250_movies.json","w") as file:
+		json.dump(movie_detail,file,indent=4)
+	return movie_detail
+
+
+movies=scrape_top_list()
+pprint(movies)
