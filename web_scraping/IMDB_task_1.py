@@ -70,4 +70,4 @@ def scrape_top_list():
 
 
 movies=scrape_top_list()
-pprint(movies)
+# pprint(movies)

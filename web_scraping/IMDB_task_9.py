@@ -1,68 +1,5 @@
-from urllib.request import urlopen # Importing requests to get request data from a Web URL
-from bs4 import BeautifulSoup # Importing BeautifulSoup from BS4, BeautifulSoup is a scraping tool
-from pprint import pprint # Importing pprint for pretty print
-import os.path
-import json ## Importing JSON module to load and dump from json file and dump dictionary in json respectively
-#randint is a function that is part of the random module.
 import random, time #Importing time library to 'sleep' our program between two requests
-
-#task_1
-def scrape_top_list():
-	if os.path.exists("Top_250_movies.json"):
-		with open("Top_250_movies.json") as file:
-			read_file=file.read()
-			file_store=json.loads(read_file)
-		return file_store
-
-	imdb_url=urlopen("https://www.imdb.com/india/top-rated-indian-movies/")
-	soup=BeautifulSoup(imdb_url, "lxml")
-	main_div=soup.find("tbody", class_="lister-list")
-	table_row=main_div.find_all("tr")
-
-	movie_detail=[]
-	for tr in table_row:
-
-		#for movie position 
-		position=tr.find("td",class_="titleColumn").get_text().strip().split()
-		position=int(position[0].strip("."))
-
-		#Movie Name
-		movie_name=tr.find("td",class_="titleColumn").a.get_text()
-
-		#Movie Year
-		movie_year=tr.find("td",class_="titleColumn").span.get_text()
-		movie_year=movie_year.replace("(","").replace(")","")
-
-		#Movie Rating
-		rating=tr.find("td",class_="imdbRating").strong.get_text()
-
-		#Movie URL
-		url="https://www.imdb.com"
-		make_url=tr.find("td",class_="titleColumn").a["href"]
-		for i in make_url:
-			if "?" in i:
-				break
-			else:
-				url+=i
-		
-		store={
-		"position":position,
-		"Movie Name":movie_name,
-		"Movie Year":int(movie_year),
-		"Rating":float(rating),
-		"URL":url
-		}
-		
-		movie_detail.append(store)
-
-	# return(movie_detail)
-	with open("Top_250_movies.json","w") as file:
-		json.dump(movie_detail,file,indent=4)
-	return movie_detail
-
-
-movies=scrape_top_list()
-# pprint(movies)
+from IMDB_task_1 import *
 
 #Task 4 and Task 8 and Task 9.
 # This movie returns major details of a movies from the file if it exists,
@@ -174,7 +111,7 @@ def get_movie_list_details(movies_list):
 
 	url_lst=[]
 	top_movies=[]
-	for i in movies_list[:250]:
+	for i in movies_list[:10]:
 		url_lst.append(i["URL"])
 	
 	for url in url_lst:
@@ -183,4 +120,4 @@ def get_movie_list_details(movies_list):
 	return top_movies
 
 movies_list=(get_movie_list_details(movies))
-pprint(movies_list)
+# pprint(movies_list)

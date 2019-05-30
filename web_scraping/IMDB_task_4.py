@@ -101,4 +101,5 @@ def scrape_movie_details(movie_url):
 	store["RunTime"]=runtime
 	return store
 
-pprint(scrape_movie_details(movie_url))
+scrape_single_movie=(scrape_movie_details(movie_url))
+# pprint (scrape_single_movie)
